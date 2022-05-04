@@ -2,7 +2,7 @@ package biblioteca;
 
 public class Livro {
 
-    public String titulo, autor, isbn, categoria, edicao;
+    public String titulo, autor, isbn;
     public int quantidade;
 
     public int getQuantidade() {
@@ -10,7 +10,7 @@ public class Livro {
     }
 
     public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+       this.quantidade = quantidade;
     }
 
     public String getTitulo() {
@@ -23,14 +23,6 @@ public class Livro {
 
     public String getIsbn() {
         return isbn;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public String getEdicao() {
-        return edicao;
     }
 
 }

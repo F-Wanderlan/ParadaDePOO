@@ -29,15 +29,16 @@ public class BibliotecaFacade {
 
     }
 
-    public Livro consultarLivro(String isbn, Biblioteca biblioteca, Livro livro){
-        for(Livro livro1 : biblioteca.getAcervo().values()){
-            if(livro1.equals(livro)){
-                return livro;
+    public Livro consultarLivro(String isbn, Biblioteca biblioteca) {
+        for (Livro livro1 : biblioteca.getAcervo().values()) {
+            if (livro1.isbn.equals(biblioteca.getAcervo().values())) {
+                return livro1;
             }
 
         }
-
+        return null;
     }
+
 
     public void devolverLivro(String isbn, Usuario usuario){
         for(Livro livro : usuario.getEmprestimos().values()){
